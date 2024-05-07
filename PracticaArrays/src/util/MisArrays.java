@@ -3,6 +3,14 @@ package util;
 import java.util.Arrays;
 
 public abstract class MisArrays {
+	
+	/**
+	 * Realiza la media de las notas implementadas por parametro
+	 * 
+	 * @param notas es el array que incluye las notas a realizar la media
+	 * 
+	 * @return La media de todas las notas
+	 */
 
 	public static float mediaNotas(int notas[]) {
 
@@ -31,6 +39,15 @@ public abstract class MisArrays {
 		return suma / notas.length;
 
 	}
+	
+	/**
+	 * Si el número de valores del array es par, 
+	 * tendrás que coger los dos valores centrales y hacerles la media.
+	 * 
+	 * @param notas es el array del que se quiere saber la mediana
+	 * 
+	 * @return la mediana del array
+	 */
 
 	public static float medianaNotas(int notas[]) {
 
@@ -63,6 +80,13 @@ public abstract class MisArrays {
 		}
 
 	}
+	
+	/**
+	 * Una funcion de la que se recibe un array y que te calcula la nota maxima
+	 * 
+	 * @param notas es el array del que se tiene un que calcular la nota maxima
+	 * @return el valor maximo de ese array
+	 */
 
 	public static float maximaNota(int notas[]) {
 
@@ -91,6 +115,13 @@ public abstract class MisArrays {
 		return notaMax;
 
 	}
+	
+	/**
+	 * Una funcion de la que se recibe un array y que te calcula la nota minima
+	 * 
+	 * @param notas es el array del que se tiene un que calcular la nota minima
+	 * @return el valor minima de ese array
+	 */
 
 	public static float minimaNota(int notas[]) {
 
