@@ -43,7 +43,6 @@ class testMediana {
 	}
 	
 	@Test
-
 	void testMedianaNoValida() {
 
 		Exception e = assertThrows(IllegalArgumentException.class, () -> MisArrays.mediaNotas(notas3));
