@@ -43,7 +43,7 @@ class testNotaMax {
 	}
 	
 	@Test
-	void testNotaMinimaNoValida() {
+	void testNotaMaximaNoValida() {
 
 		Exception e = assertThrows(IllegalArgumentException.class, () -> MisArrays.mediaNotas(notas3));
 

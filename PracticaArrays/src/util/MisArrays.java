@@ -66,12 +66,22 @@ public abstract class MisArrays {
 
 	public static float maximaNota(int notas[]) {
 
+		for (int i = 0; i < notas.length; i++) {
+
+			if (notas[i] < 0 || notas[i] > 10) {
+
+				throw new IllegalArgumentException("La nota no pertenece al rango establecido.");
+
+			}
+
+		}
+
 		float notaMax = notas[0];
 
 		for (int i = 0; i < notas.length; i++) {
 
 			if (notaMax < notas[i]) {
-				
+
 				notaMax = notas[i];
 
 			}
@@ -81,15 +91,25 @@ public abstract class MisArrays {
 		return notaMax;
 
 	}
-	
+
 	public static float minimaNota(int notas[]) {
+
+		for (int i = 0; i < notas.length; i++) {
+
+			if (notas[i] < 0 || notas[i] > 10) {
+
+				throw new IllegalArgumentException("La nota no pertenece al rango establecido.");
+
+			}
+
+		}
 
 		float notaMin = notas[0];
 
 		for (int i = 0; i < notas.length; i++) {
 
 			if (notaMin > notas[i]) {
-				
+
 				notaMin = notas[i];
 
 			}
